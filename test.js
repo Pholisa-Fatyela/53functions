@@ -73,3 +73,8 @@ QUnit.test("sum_word_len()", function(assert) {
 	var result = sum_word_len("hello my name is pholisa fatyela");
 	assert.equal(result,27)
 })
+
+QUnit.test("longestWord()", function(assert) {
+	var result = longestWord("hello my name is pholisasss fatyela");
+	assert.equal(result,"pholisasss" ,10 )
+})
