@@ -78,3 +78,8 @@ QUnit.test("longest_word()", function(assert) {
     var result = longest_word("hello my name is pholisa");
     assert.equal(result, "pholisa");
 });
+
+QUnit.test("shortest_word()", function(assert) {
+    var result = shortest_word("hello i'm pholisa");
+    assert.equal(result, "i'm");
+});
