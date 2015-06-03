@@ -76,10 +76,15 @@ QUnit.test("sum_word_len()", function(assert) {
 
 QUnit.test("longest_word()", function(assert) {
     var result = longest_word("hello my name is pholisa");
-    assert.equal(result, "pholisa");
+    assert.equal(result, "pholisa" + 7);
 });
 
 QUnit.test("shortest_word()", function(assert) {
     var result = shortest_word("hello i'm pholisa");
-    assert.equal(result, "i'm");
+    assert.equal(result, "i'm" + 3);
+});
+
+QUnit.test("word_length()", function(assert) {
+    var result = word_length("hello i am pholisa");
+    assert.equal(result,4 + " or " + 3);
 });

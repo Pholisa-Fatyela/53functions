@@ -7,5 +7,5 @@ function shortest_word(str) {
             shortest_word = splitStr[i];
         }
     }
-    return shortest_word;
+    return shortest_word + shortest_word.length;
 }

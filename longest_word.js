@@ -8,5 +8,5 @@ function longest_word(str) {
             longest_word = splitStr[i];
         }
     }
-    return longest_word;
+    return longest_word + longest_word.length;
 }
