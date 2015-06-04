@@ -88,3 +88,8 @@ QUnit.test("word_length()", function(assert) {
     var result = word_length("hello i am pholisa");
     assert.equal(result,4 + " or " + 3);
 });
+
+QUnit.test("avg()", function(assert) {
+    var result = avg("hello i am pholisa");
+    assert.equal(result,3.75);
+});1
