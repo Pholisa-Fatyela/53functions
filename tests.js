@@ -1,13 +1,14 @@
+/* global QUnit */
 QUnit.test("hello()", function(assert) {
 	var value = hello();
-	assert.equal(value,"hello world")
+	assert.equal(value,"hello world");
 });
 
 QUnit.test("hello_uppercase()", function(assert) {
 	var value1 =hello_uppercase("pholisa");
 	var value2 =hello_uppercase("lisa");
 	assert.equal(value1,"Hello, PHOLISA!");
-	assert.equal(value2,"Hello, LISA!")
+	assert.equal(value2,"Hello, LISA!");
 });
 
 QUnit.test("hello_joe()", function(assert) {
@@ -16,19 +17,19 @@ QUnit.test("hello_joe()", function(assert) {
 	var value2 = hello_joe("pholisa");
 	assert.equal(value,"Hello");
 	assert.equal(value1, "Hello");
-	assert.equal(value2,"Hello, pholisa!")
+	assert.equal(value2,"Hello, pholisa!");
 });
 
 QUnit.test("number_list()", function(assert) {
 	var value1 = number_list(5);
 	var value2 = number_list(10);
 	assert.deepEqual(value1,[1,2,3,4,5]);
-	assert.deepEqual(value2,[1,2,3,4,5,6,7,8,9,10])
+	assert.deepEqual(value2,[1,2,3,4,5,6,7,8,9,10]);
 });
 
 QUnit.test("sum_numbers()", function(assert) {
 	assert.deepEqual(sum_numbers(5),15);
-	assert.deepEqual(sum_numbers(10),55)
+	assert.deepEqual(sum_numbers(10),55);
 });
 
 QUnit.test("length()", function() {
@@ -37,36 +38,36 @@ QUnit.test("length()", function() {
 	var result3 =length("ntombomuziwasekhaya");
 	equal(result1,7);
 	equal(result2,3);
-	equal(result3,19)
+	equal(result3,19);
 });
 
 QUnit.test("upper()", function() {
 	var result1 =upper("pholisa");
 	var result2 =upper("xhantilomzi");
 	equal(result1,"PHOLISA");
-	equal(result2, "XHANTILOMZI")
+	equal(result2, "XHANTILOMZI");
 });
 
 QUnit.test("Reverse()", function() {
 	var result = Reverse("pholisa");
 	var result1 = Reverse("xhantilomzi");
 	equal(result,"asilohp");
-	equal(result1, "izmolitnahx")
+	equal(result1, "izmolitnahx");
 });
 
 QUnit.test("hello_list()", function(assert) {
 	var result = hello_list(2);
-	assert.deepEqual(result,["Hello world","Hello world"])
+	assert.deepEqual(result,["Hello world","Hello world"]);
 });
 
 QUnit.test("high_low()", function(assert) {
 	var result = high_low([10,2013,3,0.2,555,69,52,-5.6]);
-	assert.deepEqual(result,"min = -5.6 , max = 2013" )
+	assert.deepEqual(result,"min = -5.6 , max = 2013" );
 });
 
 QUnit.test("count_words()", function(assert) {
 	var result = count_words("hello my name is pholisa fatyela");
-	assert.equal(result,6)
+	assert.equal(result,6);
 });
 
 QUnit.test("sum_word_len()", function(assert) {
@@ -92,4 +93,9 @@ QUnit.test("word_length()", function(assert) {
 QUnit.test("avg()", function(assert) {
     var result = avg("hello i am pholisa");
     assert.equal(result,3.75);
-});1
+});
+
+QUnit.test("start()", function(assert) {
+    var result = start("hello hi how is it");
+    assert.equal(result,"H");
+});
