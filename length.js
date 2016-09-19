@@ -1,5 +1,3 @@
-function length(name) {
+module.exports = function(){
 	return name.length;
-
 }
-
